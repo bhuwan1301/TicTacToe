@@ -66,6 +66,7 @@ header h1 {
   height: 5vh;
   background-color: yellow;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {
