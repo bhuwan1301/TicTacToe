@@ -60,6 +60,20 @@ header h1{
     margin: auto;
 }
 
+#resetbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#resetbutton button{
+    width: 40vh;
+    height: 5vh;
+    background-color: yellow;
+    border-radius: 15px;
+}
+
 
 @media screen and (max-width: 992px){
     .holder{
@@ -72,6 +86,10 @@ header h1{
     }
     #status{        
         width: 80vw;        
+    }
+    #resetbutton button{
+        width: 35vw;
+        height: 4vh;
     }
     
 }
