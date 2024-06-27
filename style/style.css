@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: cyan;
+  font-family: "Playwrite FR Moderne", sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  color: red;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.holder {
+  height: 77vh;
+  width: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 22vh;
+  height: 24vh;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  font-size: 4rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#message {
+  color: blue;
+  text-align: center;
+}
+
+#status {
+  color: brown;
+  text-align: center;
+  width: 70vh;
+  margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .holder {
+    height: 95vw;
+    width: 80vw;
+  }
+  .box {
+    width: 25vw;
+    height: 30vw;
+  }
+  #status {
+    width: 80vw;
+  }
+}/*# sourceMappingURL=style.css.map */
