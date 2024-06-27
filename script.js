@@ -39,7 +39,7 @@ for (let i = 0; i < boxElements.length; i++) {
                 }
             }
 
-            if (count >= 9) {
+            if (count >= 9 && gameOn) {
                 statusElement.innerHTML = "It's a tie!"
                 gameOn = false;
                 messageElement.innerHTML = "";
@@ -52,7 +52,7 @@ for (let i = 0; i < boxElements.length; i++) {
             messageElement.innerHTML = playerTurns[count % 2];
             statusElement.innerHTML = "";
 
-            if (count >= 6) {
+            if (count >= 5) {
                 if (weHaveAWinner()) {
                     statusElement.innerHTML = winner[1];
                     gameOn = false;
@@ -60,7 +60,7 @@ for (let i = 0; i < boxElements.length; i++) {
                 }
             }
 
-            if (count >= 9) {
+            if (count >= 8 && gameOn) {
                 statusElement.innerHTML = "It's a tie!"
                 gameOn = false;
                 messageElement.innerHTML = "";
