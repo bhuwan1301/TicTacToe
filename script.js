@@ -39,7 +39,7 @@ for (let i = 0; i < boxElements.length; i++) {
                 }
             }
 
-            if (count >= 8) {
+            if (count >= 9) {
                 statusElement.innerHTML = "It's a tie!"
                 gameOn = false;
                 messageElement.innerHTML = "";
@@ -60,7 +60,7 @@ for (let i = 0; i < boxElements.length; i++) {
                 }
             }
 
-            if (count >= 8) {
+            if (count >= 9) {
                 statusElement.innerHTML = "It's a tie!"
                 gameOn = false;
                 messageElement.innerHTML = "";
