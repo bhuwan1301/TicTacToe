@@ -36,6 +36,7 @@ for (let i = 0; i < boxElements.length; i++) {
                     statusElement.innerHTML = winner[0];
                     gameOn = false;
                     messageElement.innerHTML = "";
+                    alert("Player 'O' wins!");
                 }
             }
 
@@ -57,6 +58,7 @@ for (let i = 0; i < boxElements.length; i++) {
                     statusElement.innerHTML = winner[1];
                     gameOn = false;
                     messageElement.innerHTML = "";
+                    alert("Player 'X' wins!");
                 }
             }
 
