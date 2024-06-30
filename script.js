@@ -63,9 +63,25 @@ for (let i = 0; i < boxElements.length; i++) {
             }
 
             if (count >= 8 && gameOn) {
-                statusElement.innerHTML = "It's a tie!"
-                gameOn = false;
-                messageElement.innerHTML = "";
+                for (index = 0; index < boxElements.length; index++) {
+                    if (boxElements[index].innerHTML === "") {
+                        boxElements[index].innerHTML = 'O';
+                        break;
+                    }
+                }
+                if (weHaveAWinner()) {
+                    statusElement.innerHTML = winner[0];
+                    gameOn = false;
+                    messageElement.innerHTML = "";
+                    alert("Player 'O' wins!");
+                } else {
+                    statusElement.innerHTML = "It's a tie!"
+                    gameOn = false;
+                    messageElement.innerHTML = "";
+                }
+                // statusElement.innerHTML = "It's a tie!"
+                //     gameOn = false;
+                //     messageElement.innerHTML = "";
             }
 
         } else if (gameOn) {
@@ -107,7 +123,7 @@ function resetGame() {
     count = 0;
     messageElement.innerHTML = playerTurns[count % 2];
     statusElement.innerHTML = "";
-    for(let i = 0; i < boxElements.length; i++){
+    for (let i = 0; i < boxElements.length; i++) {
         boxElements[i].innerHTML = '';
     }
 }
